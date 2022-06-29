@@ -1,8 +1,9 @@
 name: CML
 on: # Here we use two triggers: manually and daily at 08:00
-  workflow_dispatch:
+  push:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '*/5  * * * *'
+  # workflow_dispatch:
 jobs:
   deploy-runner:
     runs-on: ubuntu-latest
