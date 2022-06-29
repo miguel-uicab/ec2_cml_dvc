@@ -2,7 +2,7 @@ name: CML
 on: # Here we use two triggers: manually and daily at 08:00
   # push:
   schedule:
-    - cron: '*/5  * * * *'
+    - cron: '*/10  * * * *'
   # workflow_dispatch:
 jobs:
   deploy-runner:
